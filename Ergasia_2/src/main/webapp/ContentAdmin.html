@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Content Admin</title>
+</head>
+<style>
+body {
+background-image: url('babyblue.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;	
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+/* style of each text-url of the menu*/
+li {
+  float: left;
+}
+li a {
+  font-size:20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 110px;
+  text-decoration: none;
+}
+/* color when hovering*/
+li a:hover:not(.active) {
+  background-color: #111;
+}
+/* style of the log out "button"*/
+.active {
+  background-color: white;
+  color: black;
+}
+</style>
+<body>
+<!-- making navigation bar using lists -->>
+<ul>
+  <li><a href="http://localhost:8080/Ergasia_2/AvailableMovie" >Available Movies</a></li>
+  <li><a href="InsertMovie.html">Insert Movie</a></li>
+  <li><a href="ScreeningInfo.html">Screening Information</a></li>
+  <li style="float:right"><a class="active" href="Menu.html">Log out</a></li>
+</ul>
+
+
+</body>
+</html>

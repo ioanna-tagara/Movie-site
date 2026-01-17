@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Content Admin</title>
+</head>
+<style>
+body {
+background-image: url('babyblue.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;	
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-size:20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 110px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
+</style>
+<body>
+<ul>
+  <li><a href="http://localhost:8080/Ergasia_2/AvailableMovie" >Available Movies</a></li>
+  <li><a href="http://localhost:8080/Ergasia_2/InsertMovie.html">Insert Movie</a></li>
+  <li><a href="#contact">Screening Information</a></li>
+  <li style="float:right"><a class="active" href="Menu.html">Log out</a></li>
+</ul>
+
+<br><br><br>
+<div style = "text-align:center; font-size:23px; padding:3% 25%;">
+
+<fieldset>
+<legend>Screening Information:</legend>
+<form method="post" action="ScreenigInformation">
+<br><br><br>
+<label for="id">Movie id:</label> <input size="40" type="text" id="id" name="id" required ><br><br><br><br>
+<label for="room">Screening room:</label> <input size="40" type="text" id="room" name="room" maxlength="20" required ><br><br>
+<label for="time">Viewing time:</label> <input size="40" type="text" id="time" name="time" maxlength="20" required ><br><br>
+<input type="submit" value="Submit">
+</form>
+</fieldset>
+</div>
+</body>
+</html>
+
+
